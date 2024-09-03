@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Report by lipesh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div id="background-animation" class="background-animation"></div>
+        
+        <header>
+            <h1>Weather Report from Lipesh</h1>
+            <div class="search-bar">
+                <input type="text" id="location-input" placeholder="Enter location...">
+                <button onclick="fetchWeather()">Get Weather</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="weather-info">
+                <div class="temperature">
+                    <div id="thermometer" class="thermometer">
+                        <div class="thermometer-fill"></div>
+                    </div>
+                    <h2 id="current-temperature">--°C</h2>
+                </div>
+                <div id="weather-description" class="weather-description">Loading...</div>
+                <div id="weather-icon" class="weather-icon"></div>
+            </div>
+            <div id="forecast" class="forecast">
+                <!-- Forecast will be populated here -->
+            </div>
+        </main>
+
+        <div id="map" class="weather-map"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
